@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.ColorBarActivity">
+
     <com.aeolou.colorpick.view.ColorBarView
         android:id="@+id/cbv_color_pick"
         android:layout_width="match_parent"
@@ -26,12 +27,22 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/tv_text_color_b"
         app:layout_constraintTop_toBottomOf="@id/cbv_color_pick" />
+
     <TextView
         android:id="@+id/tv_text_color_b"
         android:layout_width="40dp"
         android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/tv_text_color_a"
+        app:layout_constraintRight_toLeftOf="@id/tv_text_color_c"
+        app:layout_constraintTop_toBottomOf="@id/cbv_color_pick" />
+
+    <TextView
+        android:id="@+id/tv_text_color_c"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_text_color_b"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cbv_color_pick" />
 </androidx.constraintlayout.widget.ConstraintLayout>
